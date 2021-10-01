@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Taller Práctico</title>
+    <link rel="stylesheet" href="estilosTaller.css">
+</head>
+<body>
+
+    <form action="javascript:void(0);" id="formularioRestaurante" class="formulario" >
+        <h1>Ordenar Pollito Sivarense</h1>
+        <section id="primeraSeccion">
+            <h4>Combos:</h4>
+            <fieldset>
+                <div id="containerCombo">
+                    <label><input type="radio" name="cmb" id="radio1" value="7.25" checked>Super Combo</label>
+                </div>
+                <div id="containerCombo">
+                    <label><input type="radio" name="cmb" id="radio2" value="5.75">Combo Personal</label>
+                </div>
+                <div id="containerCombo">
+                    <label><input type="radio" name="cmb" id="radio3" value="3.50">Combo Infantil</label>
+                </div>
+                <input type="hidden" name="comboHidden" value="0.00">
+            </fieldset>
+        </section>
+        <section id="segundaSeccion">
+            <h4>Toppings:</h4>
+            <fieldset>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="Ensalada" id="checkbox" value="1.50"> Ensalada</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="Papa" id="checkbox" value="1.25"> Papa Frita</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="polloGrande" id="checkbox" value="1.75"> Pieza de Pollo Grande</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="polloMediano" id="checkbox" value="1.50"> Pieza de Pollo Mediana</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="polloPequeño" id="checkbox" value="1.25"> Pieza de Pollo Pequeña</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="bebidaGrande" id="checkbox" value="1.50"> Bebida Grande</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="bebidaMediana" id="checkbox" value="1.25"> Bebida Mediana</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="bebidaMediana" id="checkbox" value="1.00"> Bebida Pequeña</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="Cafe" id="checkbox" value="0.50"> Café</label>
+                </div>
+                <div id="containerTopping">
+                    <label id="addTopp"><input type="checkbox" name="Postre" id="checkbox" value="1.25"> Postre</label>
+                </div>
+                <input type="hidden" name="toppHidden" value="0.00">
+            </fieldset>
+        </section>
+
+        <section id="terceraSeccion">
+            <label >Precio Total ($): <input type="text" name="totalPagarOrden" id="totalPagarOrden" readonly></label>
+        </section>
+
+        <section id="cuartaSeccion">
+            <div id="sugerenciaOrden"><input type="button" name="sugerenciaPedido" id="sugerenciaPedido" value="Hacer sugerencia del Pedido"></div>
+        </section>
+
+        
+    </form>
+
+<script src="tallerPractico2.js"></script>
+    
+</body>
+</html>
